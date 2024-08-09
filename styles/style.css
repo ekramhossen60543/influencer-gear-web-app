@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Share Styles */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+/* Display Flex */
+.display-flex {
+  display: flex;
+}
+/* Dark-01 */
+.text-light-gray {
+  color: #3a3a3a;
+}
+/* Header Related Styles */
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navbar Related Styles */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px auto;
+}
+.navbar > h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.navbar > ul {
+  align-items: center;
+  gap: 34px;
+}
+.navbar > ul li {
+  list-style: none;
+}
+.navbar > ul li a {
+  text-decoration: none;
+  color: rgb(58, 58, 58);
+  font-size: 16px;
+  font-weight: 600;
+}
+.nav-icon {
+  width: 19px;
+  cursor: pointer;
+}
+/* Hero Section Related Styles */
+.hero-section {
+  gap: 131px;
+  align-items: center;
+}
+.hero-content {
+  max-width: 580px;
+}
+.hero-content h1 {
+  font-size: 3.25rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.hero-content p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.hero-content #prebook-btn {
+  background-color: #e02c6d;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 41px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.hero-image {
+  max-width: 475px;
+  background-image: url("../images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.hero-image img {
+  max-width: 440px;
+}
+/* Main Section Styles */
+.main {
+  max-width: 1110px;
+  margin: 50px auto;
+}
+/* Sponsors Section Styles */
+.sponsors-section {
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 10px 0;
+
+  /* Liner Gradient Styles */
+  /* border-inline-start: 5px solid; */
+  border-block-start: 2px solid;
+  border-block-end: 2px solid;
+  border-image-source: linear-gradient(90deg, #c0ccda, transparent 90%);
+  border-image-slice: 1;
+  padding: 10px;
+}
+.sponsors-icon {
+  width: 100%;
+}
+@media screen and (max-width: 576px) {
+  .navbar,
+  .navbar > ul {
+    flex-direction: column;
+  }
+  /* Navbar and Hero Section Styles */
+  .hero-image img {
+    max-width: 300px;
+  }
+  .hero-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 60px;
+  }
+  .navbar {
+    gap: 50px;
+  }
+  .navbar > ul {
+    gap: 10px;
+    align-items: center;
+  }
+  /* Sponsors Section Styles */
+  .sponsors-section {
+    flex-wrap: wrap;
+    gap: 50px;
+    border: none;
+  }
+  .sponsors-icon {
+    width: 70px;
+  }
+}
